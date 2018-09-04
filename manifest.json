@@ -6,10 +6,10 @@
     "display": "standalone",
     "start_url": "./",
     "short_name": "SuperK",
-    "theme_color": "#C9801F",
+    "theme_color": "#2693ff",
     "description": "SuperK",
     "orientation": "any",
-    "background_color": "#C9801F",
+    "background_color": "#2693ff",
     "related_applications": [],
     "prefer_related_applications": false,
     "icons": []
