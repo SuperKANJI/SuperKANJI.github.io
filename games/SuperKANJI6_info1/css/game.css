@@ -1,0 +1,28 @@
+html, body {
+  height: 100%;
+}
+div.view {
+  height: 100%;
+  width: 99%;
+  padding: 5px;
+}
+.viewbox{
+  height: 97%;
+  width: 99%;
+  padding: 5px;
+}
+.view_frame{
+  width: 100%;
+}
+input[type="text"] {
+   width: 94%;
+   outline: 0;
+   border-color:#000000;
+   border: none;
+   font-family:monospace;
+   ime-mode:inactive;
+}
+textarea{
+  width: 99%;
+  font-family:monospace;
+  }

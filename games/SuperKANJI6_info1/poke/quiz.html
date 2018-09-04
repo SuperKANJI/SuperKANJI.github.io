@@ -1,0 +1,20 @@
+<script src="quiz.js"></script>
+<script type="text/javascript"> <!--
+document.write('<form name="frm" action="javascript://" method="get">');
+document.write("<p>");
+document.write('<textarea wrap="soft" name="msg" rows=10 cols=50>');
+if(!chk_ques()){document.write(jiake+"それでは、第1問。\r");
+document.write(jiake+mondai[shutsudai[p_qut]+"q"]);}
+else{document.write(jiake+sp_ques("q"));}
+document.write("<\/textarea><br>");
+for(var i=1;i<=sct;i++){
+make_btn("kaitou("+i+");",i);
+var sntk=mondai[shutsudai[p_qut]+"s"+sentaku[i]];
+if(chk_ques()){sntk=sp_ques("s",sntk);}
+document.write('<input type="text" name="ans'+i+'" value="'+sntk+'" size=40><br>');
+}
+make_btn("replay();","リプレイ");
+document.write("<\/p>");
+document.write("<\/form>");
+//-->
+</script>

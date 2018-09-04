@@ -1,0 +1,65 @@
+/*文書全体の背景色と文字色を設定*/
+body, textarea, input{
+background-color: #000000;
+color: #ffffff
+}
+/*操作方法を最初は非表示にしたいという気持ち*/
+/*全体*/
+.howto {
+    margin: 2em 0;
+    padding: 0;
+}
+
+/*ボタン*/
+.howto label {
+    padding: 15px;
+    font-weight: bold;
+    background: #efefef;
+    border-radius: 5px;
+    cursor :pointer;
+    transition: .5s;
+}
+
+/*アイコン*/
+.howto label:before {
+    display: inline-block;
+    content: '\f078';
+    font-family: 'FontAwesome';
+    padding-right: 5px;
+    transition: 0.2s;
+}
+
+/*ボタンホバー*/
+.howto label:hover {
+    background: silver;
+}
+
+/*アイコン切り替え*/
+.howto input:checked ~ label:before {
+     content: '\f00d';
+     -ms-transform: rotate(360deg);
+     -webkit-transform: rotate(360deg);
+     transform: rotate(360deg);
+     color: #668ad8;
+}
+
+/*チェックは非表示*/
+.howto input {
+    display: none;
+}
+
+/*中身を非表示*/
+.howto .howto_raw {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.8s;
+}
+
+/*見えないけどチェックが付くとで中身表示*/
+.howto input:checked ~ .hidden_show {
+    padding: 10px 0;
+    height: auto;
+    opacity: 1;
+}
