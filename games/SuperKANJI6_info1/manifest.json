@@ -1,0 +1,16 @@
+{
+    "dir": "ltr",
+    "lang": "ja",
+    "name": "SuperK",
+    "scope": "/games/SuperKANJI6_info1/",
+    "display": "standalone",
+    "start_url": "./",
+    "short_name": "SuperK",
+    "theme_color": "#2693ff",
+    "description": "SuperK",
+    "orientation": "any",
+    "background_color": "#2693ff",
+    "related_applications": [],
+    "prefer_related_applications": false,
+    "icons": []
+}
